@@ -24,10 +24,12 @@
     <p>Já me livrei dessa maldição!!</p>
     
     <script>
-        window.alert('Minha primeira mensagem!')
-        alert('teste')
-        window.confirm('Está gostando de JS?') 
-        window.prompt('Qual seu nome?') // vai perguntar o nome
+       var n1 = Number.parseFloat(window.prompt('Digite um número'))
+
+       var n2 = Number.parseFloat(window.prompt('Digite outro número'))
+       var s = n1 + n2
+       alert('A soma de , '+ n1 +'+'+ n2 + '='+ s )
+       alert(`A soma de ${n1} + ${n2} = ${s}`)
     </script>
 </body>
 </html>
