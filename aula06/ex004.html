@@ -16,7 +16,11 @@
 <body>
     <script>
         var nome = window.prompt('Digite seu nome:')
-        document.write(`olá ${nome}!, Seu nome possui ${nome.length} letras`)
+        document.write(`olá <sttrong>${nome}</strong>!, Seu nome possui ${nome.length}<br/>`)
+        document.write(`Seu nome em maiúsculas é ${nome.toLocaleUpperCase()} e minúsculas, ${nome.toLocaleLowerCase()}<br/>`)
+        var salario = window.prompt('Quanto recebe de salário?')
+        var reajuste = salario * 0.10
+        document.write(`Seu salário terá reajuste de 10%, portanto passará a receber ${reajuste + salario}`)
     </script>
     
 </body>

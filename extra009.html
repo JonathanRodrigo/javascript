@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Digite o país onde nasceu: 
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="verificar()">
+
+    <div id="res"></div>
+    
+    <script>
+        function verificar() {  
+            var res = windowd.Document.querySelector('div#res')
+            var pais = window.Document.querySelector('input#txtpais')
+            
+            if (pais == brasil) {
+                res.innerHTML = `<p>Você e <strong>Brasileiro </strong></p>`
+                
+            }
+            res.Document = `teste`
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font: normal 20px arial;
+            color: #0000ff;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var user = window.prompt('Digite seu nome: ')
+        var idade = window.prompt('Quantos anos você tem?: ')
+        var idade_r = idade>=18? 'Maior' : 'Menor' 
+        document.write(`Seja bem vindo! ${user.toLocaleUpperCase()}, você tem ${idade} anos é ${idade_r} idade.<br/>`)
+        var salario = prompt('qual o valor do seu salário: ')
+        var funcao = idade < 18? 'Estágiario' : 'Funcionario'
+        document.writeln(`Você estará alocado a equipe de ${funcao}<br/>`)
+        var t_servico = prompt('Quantos meses de serviço já tem?')
+        var ajuste = t_servico <=11? 'Assim que completar 12 meses, receberá 5% de ajuste' : 'Parabens vc receberá ajuste de 5% '
+        document.writeln(`Hoje você tem ${t_servico} meses, ganha ${salario}, ${ajuste}<br/>`)
+    </script>
+
+
+    
+    
+</body>
+</html>

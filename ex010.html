@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">Velocidade maxíma permitida 60km/h</div>
+    
+    <script>
+        function calcular(){
+            var vel = window.document.querySelector('input#txtvel')
+            var v = Number(vel.value)
+            if (v > 60) {
+                res.innerHTML =`Sua velocidade foi a acima da permitida multado`
+            }else{
+                res.innerHTML = `Como o limite de velocida é 60km/h e vc estava ${v} parabens `
+            }
+
+        }
+    </script>
+
+    
+</body>
+</html>
+
